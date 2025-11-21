@@ -39,7 +39,7 @@
   <link rel="stylesheet" href="css/theme.css">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="css/responsive.css">
-  <script src="/js/vendor/modernizr-2.8.3.min.js"></script>
+  <script src="js/vendor/modernizr-2.8.3.min.js"></script>
   <!--[if lt IE 9]>
         <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
         <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -97,7 +97,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="/"><img src="/images/logo.png" style="height: 40px;" alt=""></a>
+        <a class="navbar-brand" href="/"><img src="images/logo.png" style="height: 40px;" alt=""></a>
       </div>
       <div class="collapse navbar-collapse" id="mainmenu">
         <div class="navbar-header navbar-right hidden visible-lg padding-left-50">
@@ -145,7 +145,7 @@
     </div>
   </section>
 
-<footer class="footer-area v4" style="background-image: url('/images/footer-bg.png');">
+<footer class="footer-area v4" style="background-image: url('images/footer-bg.png');">
         <div class="container">
             <div class="row footer-widget-area">
                 <div class="col-xs-12 col-sm-4">
@@ -225,7 +225,7 @@
     let nexturl =null;
     let prevurl =null;
     var itemsdiv = document.getElementById("galleryitems");
-    self.httpGet('/infographic/blogitems.json',function(t){
+    self.httpGet('blogitems.json',function(t){
             let d = JSON.parse(t);
             if(d.count){
                 let selected =false;
