@@ -229,7 +229,7 @@
     function updatecontent(){
           if(jsondata){
                 let selected =false;
-                for(let c=0;c<Object.keys(d.items).length;c++){
+                for(let c=0;c<Object.keys(jsondata.items).length;c++){
                   if(post == jsondata.items[c].url ){
                     selected = true;
                     nexturl = jsondata.items[c+1]?jsondata.items[c+1].url:null;
@@ -251,7 +251,7 @@
             } 
     }
     self.httpGet('blogitems.json',function(t){
-            let jsondata = JSON.parse(t);
+            jsondata = JSON.parse(t);
             updatecontent();
         });
 
