@@ -28,17 +28,17 @@
   <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
   <link rel="shortcut icon" type="image/ico" href="/images/favicon.ico" />
 
-  <link rel="stylesheet" href="/css/normalize.css">
-  <link rel="stylesheet" href="/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/css/owl.carousel.min.css">
-  <link rel="stylesheet" href="/css/magnific-popup.css">
-  <link rel="stylesheet" href="/css/font-awesome.min.css">
-  <link rel="stylesheet" href="/css/slicknav.css">
-  <link rel="stylesheet" href="/css/animate.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/slicknav.css">
+  <link rel="stylesheet" href="css/animate.css">
 
-  <link rel="stylesheet" href="/css/theme.css">
-  <link rel="stylesheet" href="/style.css">
-  <link rel="stylesheet" href="/css/responsive.css">
+  <link rel="stylesheet" href="css/theme.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/responsive.css">
   <script src="/js/vendor/modernizr-2.8.3.min.js"></script>
   <!--[if lt IE 9]>
         <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -116,12 +116,12 @@
   </nav>
 
   <header class="header-area text-white xs-center v4"
-    style="background-image: url('/images/header-bg.png'); background-position: center top; background-size: 100% 100%;min-height: auto;"
+    style="background-image: url('images/header-bg.png'); background-position: center top; background-size: 100% 100%;min-height: auto;"
     id="home-page">
   </header>
 
   <section id="purchase" class="section-padding contact-area"
-    style="background: url('/images/welcome-4-Shape.png') no-repeat scroll center left 10px / 600px 100%;">
+    style="background: url('images/welcome-4-Shape.png') no-repeat scroll center left 10px / 600px 100%;">
     <div class="container">
       <div class="row">
         <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3 text-center">
@@ -150,7 +150,7 @@
             <div class="row footer-widget-area">
                 <div class="col-xs-12 col-sm-4">
                     <div class="widget">
-                        <img src="/images/dark-logo.png" style="height:30px;" alt="">
+                        <img src="images/dark-logo.png" style="height:30px;" alt="">
                         <div class="space-10"></div>
                         <p>Turn creative ideas into<br> super-fast Power BI visuals. <br>Simply.</p>
                         <div class="copyright">Copyright <a href="https://intellectbi.com/">Intellect BI</a></div>
@@ -160,10 +160,10 @@
                     <div class="widget">
                         <h5 class="widget-title">About</h5>
                         <ul>
-                            <li><a href="/infographic-gallery">Infographic Gallery</a></li>
-                            <li><a href="/docs">Getting Started</a></li>
-                            <li><a href="/conditions-license">Terms &amp; Conditions</a></li>
-                            <li><a href="/privacy-policy">Privacy Policy</a></li>
+                            <li><a href="/infographic/gallery">Infographic Gallery</a></li>
+                            <li><a href="/infographic/docs">Getting Started</a></li>
+                            <li><a href="/infographic/conditions-license">Terms &amp; Conditions</a></li>
+                            <li><a href="/infographic/privacy-policy">Privacy Policy</a></li>
                         </ul>
                     </div>
                 </div>
@@ -220,12 +220,12 @@
   </style>
   <script>
     console.log(window.location.pathname);
-    const post = (window.location.pathname=="/docs"?"/docs/getting-started":window.location.pathname);
+    const post = (window.location.pathname=="/infographic/docs"?"/infographic/docs/getting-started":window.location.pathname);
     let posthtml = "";
     let nexturl =null;
     let prevurl =null;
     var itemsdiv = document.getElementById("galleryitems");
-    self.httpGet('https://pureviz.net/infographic/blogitems.json',function(t){
+    self.httpGet('/infographic/blogitems.json',function(t){
             let d = JSON.parse(t);
             if(d.count){
                 let selected =false;
@@ -271,19 +271,19 @@
 
   </script>
 
-  <script src="/js/email-decode.min.js"></script>
-  <script src="/js/vendor/jquery-1.12.4.min.js"></script>
-  <script src="/js/vendor/bootstrap.min.js"></script>
+  <script src="js/email-decode.min.js"></script>
+  <script src="js/vendor/jquery-1.12.4.min.js"></script>
+  <script src="js/vendor/bootstrap.min.js"></script>
 
-  <script src="/js/owl.carousel.min.js"></script>
-  <script src="/js/ajaxchimp.js"></script>
-  <script src="/js/magnific-popup.min.js"></script>
-  <script src="/js/contact-form.js"></script>
-  <script src="/js/slicknav.min.js"></script>
-  <script src="/js/scrollUp.min.js"></script>
-  <script src="/js/wow.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/ajaxchimp.js"></script>
+  <script src="js/magnific-popup.min.js"></script>
+  <script src="js/contact-form.js"></script>
+  <script src="js/slicknav.min.js"></script>
+  <script src="js/scrollUp.min.js"></script>
+  <script src="js/wow.min.js"></script>
 
-  <script src="/js/main.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
